@@ -6,7 +6,7 @@ export const Education = () => {
     return (
         <>
 
-            Education
+            <h2>Education</h2>
 
         </>
     )

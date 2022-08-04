@@ -3,7 +3,7 @@ export const Projects = () => {
     return (
         <>
 
-            Projects
+            <h2>Projects</h2>
 
         </>
     )

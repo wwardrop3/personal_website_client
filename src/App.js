@@ -1,18 +1,26 @@
-import { AppBar, Container, Grid } from "@mui/material"
+import { AppBar, Box, Container, Grid } from "@mui/material"
+import { useRef, useState } from "react"
 import { ApplicationViews } from "./ApplicationViews"
 import { Navbar } from "./components/navbar/Navbar"
 
 
 export const App = () => {
+    const pagesDict = { 'Intro': "intro", 'Experience': "experience", 'Education': "education", 'Projects': "projects", "Contact": "contact" }
+    const pages = ["Intro", "Experience", "Education", "Projects"]
+
+    const [scrollId, setScrollId] = useState(document.getElementById("root"))
+
 
 
     return (
         <>
-            <Grid container disableGutters={true} xs={12} xl={8}>
+            <Grid container className="content-container" position={"fixed"} width={"100vw"}>
 
-                <AppBar position="sticky" style={{ backgroundColor: "coral" }}>
 
-                    <Navbar />
+
+                <AppBar position="sticky" style={{ backgroundColor: "coral" }} >
+
+                    <Navbar setScrollId={setScrollId} scrollId={scrollId} pages={pages} pagesDict={pagesDict} />
 
                 </AppBar>
 
@@ -21,7 +29,7 @@ export const App = () => {
 
 
                 <Grid container>
-                    <ApplicationViews />
+                    <ApplicationViews scrollId={scrollId} pages={pages} pagesDict={pagesDict} />
                 </Grid>
 
 
@@ -30,20 +38,8 @@ export const App = () => {
 
 
 
-
-
-
-
             </Grid>
-            {/* Navbar */}
-
-            {/* Content */}
-
-            {/*  */}
-
-            {/* ApplicationViews */}
-
-
         </>
+
     )
 }
