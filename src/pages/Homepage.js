@@ -1,12 +1,20 @@
-import { Box, Container, Grid, Paper, rgbToHex } from "@mui/material"
+import { Box, Container, Grid, Paper, rgbToHex, SpeedDial, SpeedDialAction, SpeedDialIcon } from "@mui/material"
 import { useEffect } from "react"
 import { Contact } from "../components/contact/Contact"
 import { Education } from "../components/education/Education"
 import { Experience } from "../components/experience/Experience"
+import { Form } from "../components/form/Form"
 import { Intro } from "../components/intro/Intro"
 import { Projects } from "../components/projects/Projects"
+import PlaygroundSpeedDial from "../components/speedDial"
+import EditIcon from '@mui/icons-material/Edit';
 
-export const Homepage = ({ scrollId, pages, pagesDict }) => {
+
+// DO A BACKGROUND IMAGE SCROLL ON INTRO SECTION TO SHOW DIFFERENT PICS
+
+
+export const Homepage = ({ scrollId, pages, pagesDict, hideFeedback, setHideFeedback, projectName, setProjectName }) => {
+
 
 
 
@@ -63,7 +71,7 @@ export const Homepage = ({ scrollId, pages, pagesDict }) => {
                 <Grid item xs={12} xl={12} className="section-container">
                     <Box className="scroller-two">
                         <div id="projects">
-                            <Projects />
+                            <Projects projectName={projectName} setProjectName={setProjectName} />
                         </div>
 
 
@@ -82,8 +90,20 @@ export const Homepage = ({ scrollId, pages, pagesDict }) => {
                     </Box>
                 </Grid>
 
+                <Grid item display={hideFeedback ? "none" : ""} xs={12} xl={12} className="section-container" overflow={"scroll"} height={"100vh"}>
+                    <div id="feedback">
+
+                        <Form />
+
+
+                    </div>
+
+
+
+                </Grid>
 
             </Grid>
+
 
 
 

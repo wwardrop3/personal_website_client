@@ -16,9 +16,8 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 
-const settings = ['Contact Me'];
 
-export const Navbar = ({ scrollId, setScrollId, pagesDict, pages }) => {
+export const Navbar = ({ scrollId, setScrollId, pagesDict, pages, hideFeedback, setHideFeedback }) => {
 
 
 
@@ -41,10 +40,10 @@ export const Navbar = ({ scrollId, setScrollId, pagesDict, pages }) => {
     };
 
     return (
-        <AppBar position="static">
+        <AppBar position="static" style={{ backgroundColor: '#2E3B55' }}>
             <Container maxWidth="xl">
                 <Toolbar>
-                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+
                     <Typography
                         variant="h6"
                         noWrap
@@ -53,14 +52,14 @@ export const Navbar = ({ scrollId, setScrollId, pagesDict, pages }) => {
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'monospace',
+                            fontFamily: 'arial',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
                             color: 'inherit',
                             textDecoration: 'none',
                         }}
                     >
-                        LOGO
+                        WSW
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -106,7 +105,6 @@ export const Navbar = ({ scrollId, setScrollId, pagesDict, pages }) => {
                             ))}
                         </Menu>
                     </Box>
-                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                     <Typography
                         variant="h5"
                         noWrap
@@ -116,14 +114,14 @@ export const Navbar = ({ scrollId, setScrollId, pagesDict, pages }) => {
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
-                            fontFamily: 'monospace',
+                            fontFamily: 'arial',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
                             color: 'inherit',
                             textDecoration: 'none',
                         }}
                     >
-                        LOGO
+                        WSW
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
@@ -145,7 +143,7 @@ export const Navbar = ({ scrollId, setScrollId, pagesDict, pages }) => {
 
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="Open settings">
-                            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, color: "white" }}>
                                 <EmailIcon />
                             </IconButton>
                         </Tooltip>
@@ -166,14 +164,17 @@ export const Navbar = ({ scrollId, setScrollId, pagesDict, pages }) => {
                             onClose={handleCloseUserMenu}
                         >
 
-                            <MenuItem key={'Contact'} onClick={() => {
+
+
+                            <MenuItem key={'feedback'} onClick={() => {
                                 {
                                     handleCloseUserMenu()
-                                    setScrollId(document.getElementById('contact'))
+                                    setHideFeedback(false)
+                                    setScrollId(document.getElementById('feedback'))
                                 }
                             }}
                             >
-                                <Typography textAlign="center">{'Contact Me'}</Typography>
+                                <Typography textAlign="center">{'Feedback'}</Typography>
                             </MenuItem>
 
                         </Menu>
