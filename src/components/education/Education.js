@@ -50,7 +50,7 @@ export const Education = () => {
                     <Grid item xs={12} md={5}>
 
 
-                        <Paper style={{ height: "100%" }} elevation={10}>
+                        <Paper style={{ height: "90%" }} elevation={10}>
 
 
                             <Grid container justifyContent={"center"} alignItems={"center"} height={"100%"}>

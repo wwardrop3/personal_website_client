@@ -1,9 +1,11 @@
-import { Accordion, AccordionDetails, AccordionSummary, Box, Grid, List, ListItem, Typography } from "@mui/material"
+import { Accordion, AccordionDetails, AccordionSummary, Box, Grid, List, ListItem, Paper, Typography } from "@mui/material"
 import React, { useState } from "react"
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import "./experience.css"
 import { NSS } from "./NSS";
 import { CBRE } from "./CBRE";
+import { UofM } from "./UofM";
+import { Giarratana } from "./Giarratana";
 
 export const Experience = () => {
 
@@ -36,98 +38,138 @@ export const Experience = () => {
 
                 </Grid>
 
-                <Grid spacing={10} item xs={12} height={"90vh"} justifyContent={"space-between"} alignItems={"center"}>
+                <Grid item xs={12} height={"90vh"} padding={1}>
+                    <Paper elevation={10} style={{ margin: 5 }} >
+                        <Accordion hidden={expanded == 'panel2' ? true : expanded == 'panel3' ? true : expanded == 'panel4' ? true : false} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
 
-                    <Accordion hidden={expanded == 'panel2' ? true : expanded == 'panel3' ? true : expanded == 'panel4' ? true : false} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                            <AccordionSummary
+                                className="accordian-summary"
+                                expandIcon={< ExpandMoreIcon style={{ color: "white" }} />}
 
-                        <AccordionSummary
-                            className="accordian-summary"
-                            expandIcon={< ExpandMoreIcon />}
-                            aria-controls="panel1bh-content"
-                            id="panel1bh-header"
-                        >
-                            <Typography sx={{ width: '100%', flexShrink: 1, maxHeight: "10vh", position: "sticky" }}>
-                                <h2 className="experience-title">Nashville Software School</h2>
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrN0f4b9ViDaPLXWS3emYUwLiK7XFsRwsgTQ&usqp=CAU" />
-                            </Typography>
-                        </AccordionSummary>
+                                aria-controls="panel1bh-content"
+                                id="panel1bh-header"
+                                style={{
+                                    "backgroundColor": "darkrange",
+                                    // "backgroundImage": "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrN0f4b9ViDaPLXWS3emYUwLiK7XFsRwsgTQ&usqp=CAU)"
+                                }}
+                            >
+                                <Typography sx={{ width: '100%', flexShrink: 1, height: "10vh", position: "sticky" }}>
+                                    <div style={{ width: "100%", alignItems: "center", justifyContent: "space-between", display: "flex", color: "white" }}>
+                                        <h2>Nashville Software School</h2>
+                                        <h5>Apprentice</h5>
 
-                        <AccordionDetails sx={{ height: "80vh" }} className="scroller-two">
-                            <NSS />
-                        </AccordionDetails>
-                    </Accordion>
+                                    </div>
+                                </Typography>
+                            </AccordionSummary>
 
+                            <AccordionDetails sx={{ height: "100vh" }} className="scroller-two">
+                                <NSS />
+                            </AccordionDetails>
 
+                        </Accordion>
 
+                    </Paper>
 
-                    <Accordion hidden={expanded == 'panel1' ? true : expanded == 'panel3' ? true : expanded == 'panel4' ? true : false} expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                    <Paper elevation={10} style={{ margin: 5 }} >
+                        <Accordion hidden={expanded == 'panel1' ? true : expanded == 'panel3' ? true : expanded == 'panel4' ? true : false} expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
 
-                        <AccordionSummary
-                            className="accordian-summary"
-                            expandIcon={< ExpandMoreIcon />}
-                            aria-controls="panel1bh-content"
-                            id="panel1bh-header"
-                        >
-                            <Typography sx={{ width: '100%', flexShrink: 1, maxHeight: "10vh", position: "sticky" }}>
-                                <h2 className="experience-title">CBRE</h2>
-                                <img src="https://www.responsibilityreports.com/HostedData/CompanyHeader/NYSE_CBRE_6fb1dec38b254747a466bf2db0c8b61d.jpg" />
-                            </Typography>
-                        </AccordionSummary>
+                            <AccordionSummary
+                                className="accordian-summary"
+                                expandIcon={< ExpandMoreIcon style={{ color: "white" }} />}
 
-                        <AccordionDetails sx={{ height: "100vh" }} className="scroller-two">
-                            <CBRE />
-                        </AccordionDetails>
+                                aria-controls="panel2bh-content"
+                                id="panel2bh-header"
+                                style={{
+                                    "backgroundImage": "url(https://www.responsibilityreports.com/HostedData/CompanyHeader/NYSE_CBRE_6fb1dec38b254747a466bf2db0c8b61d.jpg)"
+                                }}
+                            >
+                                <Typography sx={{ width: '100%', flexShrink: 1, height: "10vh", position: "sticky" }}>
+                                    <div style={{ width: "100%", alignItems: "center", justifyContent: "space-between", display: "flex", color: "white" }}>
+                                        <h2>CBRE</h2>
+                                        <h5>Financial Analyst</h5>
 
-                    </Accordion>
+                                    </div>
+                                </Typography>
+                            </AccordionSummary>
 
+                            <AccordionDetails sx={{ height: "100vh" }} className="scroller-two">
+                                <CBRE />
+                            </AccordionDetails>
 
-                    <Accordion hidden={expanded == 'panel2' ? true : expanded == 'panel1' ? true : expanded == 'panel4' ? true : false} expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+                        </Accordion>
 
-                        <AccordionSummary
-                            className="accordian-summary"
-                            expandIcon={< ExpandMoreIcon />}
-                            aria-controls="panel1bh-content"
-                            id="panel1bh-header"
-                        >
-                            <Typography sx={{ width: '100%', flexShrink: 1, maxHeight: "10vh", position: "sticky" }}>
-                                <h2 className="experience-title">GIARRATANA</h2>
-                                <img src="https://www.e-architect.com/wp-content/uploads/2020/04/alcove-residential-tower-nashville-goettsch-partners-g160420.jpg" />
-                            </Typography>
-                        </AccordionSummary>
+                    </Paper>
 
-                        <AccordionDetails sx={{ height: "100vh" }} className="scroller-two">
+                    <Paper elevation={10} style={{ margin: 5 }} >
+                        <Accordion hidden={expanded == 'panel2' ? true : expanded == 'panel1' ? true : expanded == 'panel4' ? true : false} expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
 
-                        </AccordionDetails>
+                            <AccordionSummary
+                                className="accordian-summary"
+                                expandIcon={< ExpandMoreIcon style={{ color: "white" }} />}
 
-                    </Accordion>
+                                aria-controls="panel3bh-content"
+                                id="panel3bh-header"
+                                style={{ "backgroundImage": "url(https://www.e-architect.com/wp-content/uploads/2020/04/alcove-residential-tower-nashville-goettsch-partners-g160420.jpg)" }}
+                            >
+                                <Typography sx={{ width: '100%', flexShrink: 1, height: "10vh", position: "sticky" }}>
+                                    <div style={{ width: "100%", alignItems: "center", justifyContent: "space-between", display: "flex", color: "white" }}>
+                                        <h2>Giarratana</h2>
+                                        <h5>Intern</h5>
 
+                                    </div>
+                                </Typography>
+                            </AccordionSummary>
 
-                    <Accordion hidden={expanded == 'panel2' ? true : expanded == 'panel3' ? true : expanded == 'panel1' ? true : false} expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                            <AccordionDetails sx={{ height: "100vh" }} className="scroller-two">
+                                <Giarratana />
+                            </AccordionDetails>
 
-                        <AccordionSummary
-                            className="accordian-summary"
-                            expandIcon={< ExpandMoreIcon />}
-                            aria-controls="panel4bh-content"
-                            id="panel4bh-header"
-                        >
-                            <Typography sx={{ width: '100%', flexShrink: 1, maxHeight: "10vh", position: "sticky" }}>
-                                <h2 className="experience-title">University of Minnesota</h2>
-                                <img src="https://dlyv80df02r89.cloudfront.net/images/2020/9/10/GS_M_Web.jpg" />
-                            </Typography>
-                        </AccordionSummary>
+                        </Accordion>
 
-                        <AccordionDetails sx={{ height: "100vh" }} className="scroller-two">
-
-                        </AccordionDetails>
-
-                    </Accordion>
-                </Grid>
-
+                    </Paper>
 
 
+                    <Paper elevation={10} style={{ margin: 5 }} >
+                        <Accordion hidden={expanded == 'panel2' ? true : expanded == 'panel3' ? true : expanded == 'panel1' ? true : false} expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
 
-            </Grid>
+                            <AccordionSummary
+                                className="accordian-summary"
+                                expandIcon={< ExpandMoreIcon style={{ color: "white" }} />}
+
+                                aria-controls="panel4bh-content"
+                                id="panel4bh-header"
+                                style={{ "backgroundImage": "url(https://dlyv80df02r89.cloudfront.net/images/2020/9/10/GS_M_Web.jpg)" }}
+                            >
+                                <Typography sx={{ width: '100%', flexShrink: 1, height: "10vh", position: "sticky" }}>
+                                    <div style={{ width: "100%", alignItems: "center", justifyContent: "space-between", display: "flex", color: "white" }}>
+                                        <h2>University of Minnesota</h2>
+                                        <h5>Research Assistant</h5>
+
+                                    </div>
+                                </Typography>
+                            </AccordionSummary>
+
+                            <AccordionDetails sx={{ height: "100vh" }} className="scroller-two">
+                                <UofM />
+
+                            </AccordionDetails>
+
+                        </Accordion>
+
+                    </Paper>
+                </Grid >
+
+
+
+
+            </Grid >
 
         </>
     )
 }
+
+
+
+
+
+

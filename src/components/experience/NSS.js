@@ -8,22 +8,77 @@ export const NSS = () => {
     return (
         <>
 
-            <Grid container height={"70%"} width={"100%"}>
+            <Grid container height={"70%"} width={"100%"} className={"scroller-two"}>
 
-                <Grid container md={4} maxHeight={"100%"} border={"3px solid black"} justifyContent={"center"} alignContent={"center"}>
+                <Grid container xs={12} md={4} maxHeight={"100%"} border={"3px solid black"} alignItems={"center"}>
 
 
-                    <Grid item>
-                        <img src="https://sat02pap002files.storage.live.com/y4mcFD950Mtd0DPsmaI7QdGGBBxBTNp6eipJNQkMh2XywiA1TGYN48h1Vgr7xH5BeFYZGqtm5w5CsDXdB9eS-fDvXn8tQMHMVR8rLJYMyFMYmNKWBWSdkicgSg6rff15OwMVx4GsWxLJlgRxw2PxbJBnboYUzMNDYHHg6MvyT0k0lkjzHCfvwk--TvNrgUVwJ_o?width=936&height=530&cropmode=none" ></img>
+                    <Grid item padding={1}>
+
+                        <Typography variant="h4" margin={2} justifySelf={"flex-start"} fontFamily={"monospace"}>
+                            Nashville, Tennessee
+                        </Typography>
+
+                        <Typography variant="h6">
+                            January-July, 2022
+                        </Typography>
+
+                        <Typography>
+                            Intensive full-time, six months software development bootcamp focusing on Python/Django
+                            development fundamentals and problem solving. The final three months of the program being
+                            executed in a simulated company environment with SCRUM methodology.
+                        </Typography>
+
                     </Grid>
 
 
                 </Grid>
 
-                <Grid container md={8}>
+                <Grid container md={8} alignContent={"center"} justifyContent={"space-around"}>
                     <Typography>
-                        Nashville Software School
-                        asdfasdfas;lkdfja;sldf;adsf;lajdsf;k;dsdlskfj;ajds;jal;sdjkfajs;dlkfja;dslkfja;sdfljk
+                        <ul>
+                            <li>
+                                Daily hands-on application of OP fundamentals through group and individual projects
+                            </li>
+
+                            <li>
+                                Created single page applications in JavaScript, as well as in the React framework
+                            </li>
+
+                            <li>
+                                Project management/tracking with GitHub project boards and issue tracking
+                            </li>
+
+                            <li>
+                                Source code/version control with Git/GitHub
+                            </li>
+
+                            <li>
+                                Solution Design: white-boarding and wireframes
+                            </li>
+
+                            <li>
+                                Leveraged Django for creating and editing server-
+                                generated web applications
+                            </li>
+
+                            <li>
+                                Created RESTful API's with Django REST
+                                framework
+                            </li>
+
+                            <li>
+                                Retrieved and stored database information with
+                                SQLite
+                            </li>
+
+                            <li>
+                                Practiced testing with Python's unit test framework
+                            </li>
+
+                        </ul>
+
+
                     </Typography>
                 </Grid>
 
