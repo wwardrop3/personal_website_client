@@ -1,52 +1,77 @@
 import { Button, Grid, Paper, Typography } from "@mui/material"
+import { Link } from "react-router-dom"
 
 
 export const PersonalWebsite = () => {
 
 
+    const openInNewTab = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
+
     return (
         <>
 
-            <Grid padding={1} container xs={6} md={6}>
-                <Paper style={{ height: "100%", width: "100%" }} elevation={5}>
-                    <Grid container>
-
-
-                        <Grid container xs={12}>
+            <Grid container padding={1} xs={12} height={"100%"}>
+                <Paper style={{ width: "100%", height: "90%", padding: 5 }} elevation={5}>
 
 
 
-                            <Grid item>
-                                <img src="https://sat02pap002files.storage.live.com/y4mIDQk5BbRtNM9wyC4lNgHtzyo9pKjwZ58KvZUEaam3WzH0dAr04FH-0ZW1qXzBoc4Nu7eF0cZd5LMctiR7hVif_pfr3QKdAysAQLcmianI35KNMkqSFo8lCvO__JQM3ZCp666O60KGlwhB17x7T7uOjh70MLoNE6NXATM2OtTCAX4yoDaTh-yrFLCkKDz5fsA?width=936&height=524&cropmode=none" />
+                    <Grid container xs={12}>
+
+
+
+                        <Grid item xs={12} md={6}>
+                            <img src="https://sat02pap002files.storage.live.com/y4mcFD950Mtd0DPsmaI7QdGGBBxBTNp6eipJNQkMh2XywiA1TGYN48h1Vgr7xH5BeFYZGqtm5w5CsDXdB9eS-fDvXn8tQMHMVR8rLJYMyFMYmNKWBWSdkicgSg6rff15OwMVx4GsWxLJlgRxw2PxbJBnboYUzMNDYHHg6MvyT0k0lkjzHCfvwk--TvNrgUVwJ_o?width=936&height=530&cropmode=none" />
+                        </Grid>
+
+                        <Grid container xs={12} md={6} justifyContent={"center"}>
+                            <Grid item xs={12} alignContent={"center"}>
+                                <h3>Personal Website</h3>
                             </Grid>
 
+
+
                             <Grid item xs={12}>
-                                <h3>Personal Website</h3>
+                                <Typography>
+                                    I created the website you are currently reading.  During development, I learned Material UI on the front end and used Python and Django to manage feedback responses on the backend.
+                                </Typography>
                             </Grid>
 
                             <Grid item xs={12}>
                                 <Typography>
-                                    Hitch reinvents the lost pastime of hitchhiking for the modern world. The app allows drivers with extra room in their car, to connect with passengers seeking inexpensive transportation.
+                                    <ul>
+                                        <li>Utilized Material UI to develop front end to be accessible on mobile</li>
+                                        <li>Used Python on the backend to keep track of feedback form submissions</li>
+                                    </ul>
                                 </Typography>
                             </Grid>
 
                             <Grid container xs={12} justifyContent={"space-around"}>
 
-                                <Grid item xs={12} md={4}>
-                                    <Button>See on Github</Button>
+
+
+                                <Grid item xs={6} md={4}>
+                                    <Button
+                                        onClick={() => openInNewTab("https://github.com/wwardrop3/hitch_be_capstone_client")}
+                                    >Download KML Example</Button>
+
                                 </Grid>
 
-                                <Grid item xs={12} md={4}>
-                                    <Button>Go to website</Button>
+                                <Grid item xs={6} md={4}>
+                                    <Button
+                                        onClick={() => openInNewTab("https://github.com/wwardrop3/hitch_be_capstone_client")}
+                                    >Download KML Example</Button>
+
                                 </Grid>
 
                             </Grid>
-
-
-
                         </Grid>
 
+
                     </Grid>
+
+
 
                 </Paper>
             </Grid>

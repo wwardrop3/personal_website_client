@@ -38,16 +38,24 @@ export const GoogleEarth = () => {
                                 </Typography>
                             </Grid>
 
+                            <Grid item xs={12}>
+                                <Typography>
+                                    <ul>
+                                        <li>Auto updating KML link to track Nashville Developments</li>
+                                        <li>Created 3D realistic Collada models of future buildings</li>
+                                        <li>Utilized HTML and CSS to create dynamic labels with information from Google Sheet</li>
+                                    </ul>
+                                </Typography>
+                            </Grid>
+
                             <Grid container xs={12} justifyContent={"space-around"}>
+
+
 
                                 <Grid item xs={6} md={4}>
                                     <Button
-                                        onClick={() => openInNewTab("google.com")}
-                                    >See on Github</Button>
-                                </Grid>
-
-                                <Grid item xs={6} md={4}>
-                                    <Button>Go to website</Button>
+                                        onClick={() => openInNewTab("https://github.com/wwardrop3/hitch_be_capstone_client")}
+                                    >Download KML Example</Button>
                                 </Grid>
 
                             </Grid>
