@@ -5,9 +5,9 @@ import { Link } from "react-router-dom"
 export const PersonalWebsite = () => {
 
 
-    // const openInNewTab = url => {
-    //     window.open(url, '_blank', 'noopener,noreferrer');
-    // };
+    const openInNewTab = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
 
     return (
         <>
@@ -51,7 +51,7 @@ export const PersonalWebsite = () => {
 
 
 
-                                {/* <Grid item xs={6} md={4}>
+                                <Grid item xs={6} md={4}>
                                     <Button
                                         onClick={() => openInNewTab("https://github.com/wwardrop3/hitch_be_capstone_client")}
                                     >Download KML Example</Button>
@@ -63,7 +63,7 @@ export const PersonalWebsite = () => {
                                         onClick={() => openInNewTab("https://github.com/wwardrop3/hitch_be_capstone_client")}
                                     >Download KML Example</Button>
 
-                                </Grid> */}
+                                </Grid>
 
                             </Grid>
                         </Grid>
