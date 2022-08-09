@@ -69,7 +69,7 @@ export default function ProjectDrawer({ projectName }) {
         <div>
 
             <React.Fragment key={"bottom"}>
-                {/* <Button onClick={toggleDrawer("bottom", true)}>{"bottom"}</Button> */}
+                <Button onClick={toggleDrawer("bottom", true)}>{"bottom"}</Button>
                 <Drawer
 
                     anchor={"bottom"}

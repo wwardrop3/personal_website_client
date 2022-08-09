@@ -3,14 +3,14 @@ import { Homepage } from "./pages/Homepage"
 import { Timeline } from "./pages/Timeline"
 
 
-export const ApplicationViews = ({ scrollId, pages, pagesDict, hideFeedback, setHideFeedback, projectName, setProjectName }) => {
+export const ApplicationViews = ({ scrollId, pages, pagesDict, hideFeedback, setHideFeedback }) => {
 
     return (
 
         <>
 
             <Route exact path={"/"}>
-                <Homepage scrollId={scrollId} hideFeedback={hideFeedback} setHideFeedback={setHideFeedback} projectName={projectName} setProjectName={setProjectName} />
+                <Homepage scrollId={scrollId} hideFeedback={hideFeedback} setHideFeedback={setHideFeedback} />
             </Route>
 
             <Route exact path={"/timeline"}>

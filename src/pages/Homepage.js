@@ -13,7 +13,7 @@ import EditIcon from '@mui/icons-material/Edit';
 // DO A BACKGROUND IMAGE SCROLL ON INTRO SECTION TO SHOW DIFFERENT PICS
 
 
-export const Homepage = ({ scrollId, pages, pagesDict, hideFeedback, setHideFeedback, projectName, setProjectName }) => {
+export const Homepage = ({ scrollId, pages, pagesDict, hideFeedback, setHideFeedback }) => {
 
 
 
@@ -71,7 +71,7 @@ export const Homepage = ({ scrollId, pages, pagesDict, hideFeedback, setHideFeed
                 <Grid item xs={12} xl={12} className="section-container">
                     <Box className="scroller-two">
                         <div id="projects">
-                            <Projects projectName={projectName} setProjectName={setProjectName} />
+                            <Projects />
                         </div>
 
 

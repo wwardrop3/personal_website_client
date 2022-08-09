@@ -11,7 +11,6 @@ export const App = () => {
 
     const [scrollId, setScrollId] = useState(document.getElementById("root"))
     const [hideFeedback, setHideFeedback] = useState(true)
-    const [projectName, setProjectName] = useState("")
 
 
     return (
@@ -32,8 +31,8 @@ export const App = () => {
 
 
 
-                <Grid container>
-                    <ApplicationViews scrollId={scrollId} pages={pages} pagesDict={pagesDict} hideFeedback={hideFeedback} setHideFeedback={setHideFeedback} projectName={projectName} setProjectName={setProjectName} />
+                <Grid container xs={12} md={10} xl={8}>
+                    <ApplicationViews scrollId={scrollId} pages={pages} pagesDict={pagesDict} hideFeedback={hideFeedback} setHideFeedback={setHideFeedback} />
                 </Grid>
 
 

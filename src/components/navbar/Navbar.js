@@ -143,8 +143,9 @@ export const Navbar = ({ scrollId, setScrollId, pagesDict, pages, hideFeedback, 
 
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="Open settings">
-                            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, color: "white" }}>
-                                <EmailIcon />
+                            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, color: "white", fontSize: "12pt" }}>
+                                {/* <EmailIcon /> */}
+                                Leave Feedback
                             </IconButton>
                         </Tooltip>
                         <Menu
