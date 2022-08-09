@@ -20,13 +20,11 @@ export const Giarratana = () => {
                         </Typography>
 
                         <Typography variant="h6">
-                            January-July, 2022
+                            May-June, 2019
                         </Typography>
 
                         <Typography>
-                            Intensive full-time, six months software development bootcamp focusing on Python/Django
-                            development fundamentals and problem solving. The final three months of the program being
-                            executed in a simulated company environment with SCRUM methodology.
+                            Was offered an opportunity to work with Nashville's most prolific commercial real estate developer, Tony Giarratana.  I worked in the office as an intern and participated in development meetings.
                         </Typography>
 
                     </Grid>
@@ -38,43 +36,26 @@ export const Giarratana = () => {
                     <Typography>
                         <ul>
                             <li>
-                                Daily hands-on application of OP fundamentals through group and individual projects
+                                Produced regional economic impact reports for two $130+ million high-rise projects
                             </li>
 
                             <li>
-                                Created single page applications in JavaScript, as well as in the React framework
+                                Participated in the development process of an urban park, high-rise buildings, and affordable housing projects
                             </li>
 
                             <li>
-                                Project management/tracking with GitHub project boards and issue tracking
+                                Developed a condominium occupancy management model in Excel to decrease redundancies and errors
                             </li>
 
                             <li>
-                                Source code/version control with Git/GitHub
+                                Prepared and distributed marketing materials
                             </li>
 
                             <li>
                                 Solution Design: white-boarding and wireframes
                             </li>
 
-                            <li>
-                                Leveraged Django for creating and editing server-
-                                generated web applications
-                            </li>
 
-                            <li>
-                                Created RESTful API's with Django REST
-                                framework
-                            </li>
-
-                            <li>
-                                Retrieved and stored database information with
-                                SQLite
-                            </li>
-
-                            <li>
-                                racticed testing with Python's unit test framework
-                            </li>
 
                         </ul>
 

@@ -1,5 +1,5 @@
 .scroller {
-  height: 100vh;
+  height: 90vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -17,7 +17,7 @@
 
 
 .content-container {
-  height: 100vh;
+  height: 9vh;
   justify-content: center;
   align-items: center;
 
@@ -38,6 +38,17 @@ body {
 
 .accordian-summary {
   overflow: hidden;
+
+
+}
+
+.project-title {
+  position: absolute;
+  bottom: 3%;
+  background-color: rgb(122, 122, 122, .5);
+  width: 100vw;
+  color: white;
+  justify-content: center;
 
 
 }

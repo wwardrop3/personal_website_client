@@ -29,7 +29,7 @@ export const Experience = () => {
     return (
         <>
 
-            <Grid container xs={12} overflow={"hidden"} maxHeight={"100vh"}>
+            <Grid container xs={12} height={"90vh"}>
 
                 <Grid item xs={12}>
 
@@ -38,7 +38,7 @@ export const Experience = () => {
 
                 </Grid>
 
-                <Grid item xs={12} height={"90vh"} padding={1}>
+                <Grid item xs={12} padding={1} height={"90%"}>
                     <Paper elevation={10} style={{ margin: 5 }} >
                         <Accordion hidden={expanded == 'panel2' ? true : expanded == 'panel3' ? true : expanded == 'panel4' ? true : false} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
 
@@ -49,7 +49,7 @@ export const Experience = () => {
                                 aria-controls="panel1bh-content"
                                 id="panel1bh-header"
                                 style={{
-                                    "backgroundColor": "darkrange",
+                                    "backgroundColor": "darkorange",
                                     // "backgroundImage": "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrN0f4b9ViDaPLXWS3emYUwLiK7XFsRwsgTQ&usqp=CAU)"
                                 }}
                             >
@@ -62,7 +62,7 @@ export const Experience = () => {
                                 </Typography>
                             </AccordionSummary>
 
-                            <AccordionDetails sx={{ height: "100vh" }} className="scroller-two">
+                            <AccordionDetails sx={{ height: "100%" }}>
                                 <NSS />
                             </AccordionDetails>
 
@@ -92,7 +92,7 @@ export const Experience = () => {
                                 </Typography>
                             </AccordionSummary>
 
-                            <AccordionDetails sx={{ height: "100vh" }} className="scroller-two">
+                            <AccordionDetails sx={{ height: "100%" }}>
                                 <CBRE />
                             </AccordionDetails>
 
@@ -120,7 +120,7 @@ export const Experience = () => {
                                 </Typography>
                             </AccordionSummary>
 
-                            <AccordionDetails sx={{ height: "100vh" }} className="scroller-two">
+                            <AccordionDetails sx={{ height: "100%" }}>
                                 <Giarratana />
                             </AccordionDetails>
 
@@ -149,7 +149,7 @@ export const Experience = () => {
                                 </Typography>
                             </AccordionSummary>
 
-                            <AccordionDetails sx={{ height: "100vh" }} className="scroller-two">
+                            <AccordionDetails sx={{ height: "100%" }}>
                                 <UofM />
 
                             </AccordionDetails>

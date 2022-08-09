@@ -20,13 +20,11 @@ export const CBRE = () => {
                         </Typography>
 
                         <Typography variant="h6">
-                            January-July, 2022
+                            January, 2020 - December, 2021
                         </Typography>
 
                         <Typography>
-                            Intensive full-time, six months software development bootcamp focusing on Python/Django
-                            development fundamentals and problem solving. The final three months of the program being
-                            executed in a simulated company environment with SCRUM methodology.
+                            I worked as a financial analyst for the Multifamily Brokerage Team.  I decided to persue my interest in locational data that took from undergrad and apply it with a business focus.
                         </Typography>
 
                     </Grid>
@@ -38,43 +36,36 @@ export const CBRE = () => {
                     <Typography>
                         <ul>
                             <li>
-                                Daily hands-on application of OP fundamentals through group and individual projects
+                                Underwrote 20+ multimillion dollar apartment buildings as part of Nashville’s #1 multifamily brokerage team by sales volume
                             </li>
 
                             <li>
-                                Created single page applications in JavaScript, as well as in the React framework
+                                Conducted commercial real estate market research to search for trends that could benefit our clients
+                                ▪ Utilized advanced Excel functions, ArcGIS, and Python to analyze and track market data in one of the nations most
+                                active real estate markets
                             </li>
 
                             <li>
-                                Project management/tracking with GitHub project boards and issue tracking
+                                Created a system to dynamically track and monitor Nashville’s development pipeline visually, utilizing Google Sheets,
+                                Python, and KML network links
                             </li>
 
                             <li>
-                                Source code/version control with Git/GitHub
+                                Managed the creation of dozens of 90+ page offering memorandums on Nashville’s premier multifamily apartment
+                                buildings through virtual collaboration with a graphic designer
                             </li>
 
                             <li>
-                                Solution Design: white-boarding and wireframes
+                                Utilized Google Earth Studio and Abode After Effects to create virtual market tours during the initial stages of the
+                                pandemic when clients were unable to travel
                             </li>
 
                             <li>
-                                Leveraged Django for creating and editing server-
-                                generated web applications
+                                Built dozens 3D photo-realistic Collada models of Nashville’s largest developments using Sketchup for use in
+                                Google Earth presentations to investors
                             </li>
 
-                            <li>
-                                Created RESTful API's with Django REST
-                                framework
-                            </li>
 
-                            <li>
-                                Retrieved and stored database information with
-                                SQLite
-                            </li>
-
-                            <li>
-                                racticed testing with Python's unit test framework
-                            </li>
 
                         </ul>
 

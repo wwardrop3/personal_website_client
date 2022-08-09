@@ -31,8 +31,8 @@ export const Projects = () => {
 
     const list = (anchor) => (
         <Box
-            style={{ backgroundColor: "red" }}
-            sx={{ width: '100vw', height: "100%", }}
+            style={{ backgroundColor: "transparent" }}
+            sx={{ width: '100%', height: "100%", }}
             role="presentation"
 
 
@@ -45,22 +45,27 @@ export const Projects = () => {
                 onClick={toggleDrawer("", "bottom", false)} />
 
 
-
-            <div className="project-container" hidden={projectName != "Google Earth" ? "none" : ""}>
-                <GoogleEarth />
+            <div hidden={projectName != "Personal Website" ? "none" : ""}>
+                <PersonalWebsite />
             </div>
 
             <div hidden={projectName != "Hitch" ? "none" : ""}>
                 <Hitch />
             </div>
 
-            <div hidden={projectName != "Personal Website" ? "none" : ""}>
-                <PersonalWebsite />
-            </div>
-
             <div hidden={projectName != "Reaction" ? "none" : ""}>
                 <Reaction />
             </div>
+
+
+            <div className="project-container" hidden={projectName != "Google Earth" ? "none" : ""}>
+                <GoogleEarth />
+            </div>
+
+
+
+
+
 
         </Box>
     );
@@ -73,11 +78,7 @@ export const Projects = () => {
 
 
 
-            <Grid container xs={12} xl={8} height={"90vh"}>
-
-
-
-
+            <Grid container xs={12} xl={8} height={"80vh"}>
 
 
 
@@ -86,12 +87,12 @@ export const Projects = () => {
                 </Grid>
 
 
-                <Grid container padding={1} xs={12} height={"80vh"}>
+                <Grid container padding={1} xs={12} height={"70vh"}>
 
                     <Drawer
 
                         PaperProps={{
-                            sx: { width: "100%", height: "90%" },
+                            sx: { width: "100%", height: "90%", justifyContent: "center", backgroundColor: "transparent" },
                         }}
                         anchor={"bottom"}
                         open={state["bottom"]}
@@ -108,7 +109,7 @@ export const Projects = () => {
 
 
                     {/* Personal Website */}
-                    <Grid item xs={6} padding={1} >
+                    <Grid item xs={12} padding={1} >
 
                         <Card style={{ height: "100%" }}>
 
@@ -120,7 +121,9 @@ export const Projects = () => {
                                 style={{ height: "100%", width: "100%", backgroundImage: "url(https://sat02pap002files.storage.live.com/y4mcFD950Mtd0DPsmaI7QdGGBBxBTNp6eipJNQkMh2XywiA1TGYN48h1Vgr7xH5BeFYZGqtm5w5CsDXdB9eS-fDvXn8tQMHMVR8rLJYMyFMYmNKWBWSdkicgSg6rff15OwMVx4GsWxLJlgRxw2PxbJBnboYUzMNDYHHg6MvyT0k0lkjzHCfvwk--TvNrgUVwJ_o?width=936&height=530&cropmode=none)" }}>
 
                                 <div className="project-title">
-                                    <h1>Personal Website</h1>
+                                    <Typography fontSize={12} >
+                                        <h1>Personal Website</h1>
+                                    </Typography>
 
                                 </div>
 
@@ -134,7 +137,7 @@ export const Projects = () => {
                     </Grid>
 
                     {/* Hitch */}
-                    <Grid item xs={6} padding={1}>
+                    <Grid item xs={12} padding={1} >
                         <Card style={{ height: "100%" }}>
 
                             <Button
@@ -160,7 +163,7 @@ export const Projects = () => {
 
                     {/* Reaction */}
 
-                    <Grid item xs={6} padding={1}>
+                    <Grid item xs={12} padding={1} >
                         <Card style={{ height: "100%" }}>
 
                             <Button
@@ -188,7 +191,7 @@ export const Projects = () => {
 
 
 
-                    <Grid item xs={6} padding={1}>
+                    <Grid item xs={12} padding={1} >
                         <Card style={{ height: "100%" }}>
 
                             <Button

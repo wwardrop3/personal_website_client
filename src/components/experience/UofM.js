@@ -16,17 +16,15 @@ export const UofM = () => {
                     <Grid item padding={1}>
 
                         <Typography variant="h4" margin={2} justifySelf={"flex-start"} fontFamily={"monospace"}>
-                            Nashville, Tennessee
+                            Twin Cities, Minnesota
                         </Typography>
 
                         <Typography variant="h6">
-                            January-July, 2022
+                            May-August, 2017; May-November, 2018
                         </Typography>
 
                         <Typography>
-                            Intensive full-time, six months software development bootcamp focusing on Python/Django
-                            development fundamentals and problem solving. The final three months of the program being
-                            executed in a simulated company environment with SCRUM methodology.
+                            I spent two summers working full time and part time during my senior year, working as a research assistant for a phD candidate in the Turfgrass department.  I grew my interest in locational data by assisting in the publication of a paper that compared locational data using ArcGIS.
                         </Typography>
 
                     </Grid>
@@ -38,43 +36,19 @@ export const UofM = () => {
                     <Typography>
                         <ul>
                             <li>
-                                Daily hands-on application of OP fundamentals through group and individual projects
+                                Co-authored research paper on turf management technology published in Precision Agriculture
                             </li>
 
                             <li>
-                                Created single page applications in JavaScript, as well as in the React framework
+                                Managed logistics for trials aimed at treating turf disease and creating precision irrigation systems for golf courses
                             </li>
 
                             <li>
-                                Project management/tracking with GitHub project boards and issue tracking
+                                Collected, synthesized, and analyzed spatial data in Microsoft Excel and ArcGIS in order to identify irrigation zones
+                                designed to decrease water-use on golf courses and sports fields
+
                             </li>
 
-                            <li>
-                                Source code/version control with Git/GitHub
-                            </li>
-
-                            <li>
-                                Solution Design: white-boarding and wireframes
-                            </li>
-
-                            <li>
-                                Leveraged Django for creating and editing server-
-                                generated web applications
-                            </li>
-
-                            <li>
-                                Created RESTful API's with Django REST
-                                framework
-                            </li>
-
-                            <li>
-                                Retrieved and stored database information with
-                                SQLite
-                            </li>
-
-                            <li>
-                                racticed testing with Python's unit test framework
-                            </li>
 
                         </ul>
 
