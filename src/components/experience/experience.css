@@ -1,0 +1,9 @@
+img {
+    overflow: hidden;
+    width: 100vw;
+}
+
+.experience-title {
+    color: white;
+    position: absolute;
+}

@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import { AppBar, Box, Container, Grid } from "@mui/material"
+import { useRef, useState } from "react"
+import { ApplicationViews } from "./ApplicationViews"
+import { Navbar } from "./components/navbar/Navbar"
+import ProjectDrawer from "./components/projects/ProjectDrawer"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export const App = () => {
+    const pagesDict = { 'Intro': "intro", 'Experience': "experience", 'Education': "education", 'Projects': "projects", "Contact": "contact", "Feedback": "feedback" }
+    const pages = ["Intro", "Experience", "Education", "Projects", "Contact"]
+
+    const [scrollId, setScrollId] = useState(document.getElementById("root"))
+    const [hideFeedback, setHideFeedback] = useState(true)
+
+
+    return (
+        <>
+            <Grid container disable className="content-container" position={"fixed"} width={"100vw"}>
+
+
+
+
+
+                <AppBar position="sticky" style={{ backgroundColor: '#2E3B55' }}>
+
+                    <Navbar setScrollId={setScrollId} scrollId={scrollId} pages={pages} pagesDict={pagesDict} hideFeedback={hideFeedback} setHideFeedback={setHideFeedback} />
+
+                </AppBar>
+
+
+
+
+
+                <Grid container xs={12} md={10} xl={8}>
+                    <ApplicationViews scrollId={scrollId} pages={pages} pagesDict={pagesDict} hideFeedback={hideFeedback} setHideFeedback={setHideFeedback} />
+                </Grid>
+
+
+
+
+
+
+
+            </Grid>
+        </>
+
+    )
 }
-
-export default App;
