@@ -24,7 +24,7 @@ export const CBRE = () => {
                         </Typography>
 
                         <Typography>
-                            I worked as a financial analyst for the Multifamily Brokerage Team.  I decided to persue my interest in locational data that took from undergrad and apply it with a business focus.
+                            Worked as a financial analyst for the Nashville multifamily brokerage team.  Applied my interest in locational data with a financial focus.
                         </Typography>
 
                     </Grid>
@@ -41,7 +41,11 @@ export const CBRE = () => {
 
                             <li>
                                 Conducted commercial real estate market research to search for trends that could benefit our clients
-                                ▪ Utilized advanced Excel functions, ArcGIS, and Python to analyze and track market data in one of the nations most
+
+                            </li>
+
+                            <li>
+                                Utilized advanced Excel functions, ArcGIS, and Python to analyze and track market data in one of the nations most
                                 active real estate markets
                             </li>
 

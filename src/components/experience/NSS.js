@@ -24,7 +24,7 @@ export const NSS = () => {
                         </Typography>
 
                         <Typography>
-                            Intensive full-time, six months software development bootcamp focusing on Python/Django
+                            Intensive six-month software development bootcamp focusing on Python/Django
                             development fundamentals and problem solving. The final three months of the program being
                             executed in a simulated company environment with SCRUM methodology.
                         </Typography>
