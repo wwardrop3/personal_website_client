@@ -5,8 +5,9 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 
+// "https://personal-website-server-ww.herokuapp.com/"
 
-export const host = "http://localhost:8000"
+export const host = "https://personal-website-server-ww.herokuapp.com"
 
 ReactDOM.render(
   <React.StrictMode>
