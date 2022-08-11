@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 
 
-export const host = "http://localhost:3000"
+export const host = "http://localhost:8000"
 
 ReactDOM.render(
   <React.StrictMode>

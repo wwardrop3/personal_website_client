@@ -1,5 +1,7 @@
 import { Button, Checkbox, FormControl, FormControlLabel, FormGroup, FormHelperText, Grid, Input, InputLabel } from "@mui/material"
+import { keyboard } from "@testing-library/user-event/dist/keyboard"
 import { useState } from "react"
+import { submitForm } from "../../ApiManager"
 
 export const Form = () => {
 
@@ -21,11 +23,14 @@ export const Form = () => {
 
     const [newForm, setNewForm] = useState(
         {
-            name: "",
+            first_name: "",
             email: "",
             industry: "",
-            experience_wanted: "",
-            wanted_skills: {
+            ok_to_contact: false,
+            hiring: false,
+            company: "",
+            last_name: "",
+            skills: {
                 python: false,
                 django: false,
                 orm: false,
@@ -51,7 +56,7 @@ export const Form = () => {
 
     const handleSkills = (skill) => {
         const copy = { ...newForm }
-        copy.wanted_skills[skill] = !copy.wanted_skills[skill]
+        copy.skills[skill] = !copy.skills[skill]
         setNewForm(copy)
     }
 
@@ -61,37 +66,50 @@ export const Form = () => {
         setNewForm(copy)
     }
 
+    const handleChecks = (id) => {
+        const copy = { ...newForm }
+
+        copy[id] = !copy[id]
+        console.log(copy[id])
+        console.log(id)
+        setNewForm(copy)
+    }
+
+
+
     return (
         <>
 
             <h1>Feedback</h1>
 
 
-            <InputLabel htmlFor="my-input">Name</InputLabel>
-            <Input name="name" id="name" area-aria-describedby="my-helper-text"
+            <InputLabel htmlFor="my-input">First Name</InputLabel>
+            <Input name="first_name" id="first_name" area-aria-describedby="my-helper-text"
                 onChange={(e) => handleChange(e.target.id, e.target.value)} />
 
+
+            <InputLabel htmlFor="my-input">Last Name</InputLabel>
+            <Input name="last_name" id="last_name" area-aria-describedby="my-helper-text"
+                onChange={(e) => handleChange(e.target.id, e.target.value)} />
 
 
             <InputLabel htmlFor="email">Email Address</InputLabel>
             <Input name="email" id="email" area-aria-describedby="my-helper-text"
                 onChange={(e) => handleChange(e.target.id, e.target.value)} />
-            <FormHelperText id="my-helper-text">Enter email if you would like to connect</FormHelperText>
 
-
-            <Input name="industry" id="industry" area-aria-describedby="my-helper-text"
+            <InputLabel htmlFor="my-input">Company Name</InputLabel>
+            <Input name="company" id="company" area-aria-describedby="my-helper-text"
                 onChange={(e) => handleChange(e.target.id, e.target.value)} />
 
 
+            <div style={{ display: "flex", flexDirection: "column" }}>
+                <FormControlLabel control={<Checkbox />} name="ok_to_contact" label="Ok to contact?" onChange={(e) => handleChecks(e.target.name)} />
+                <FormControlLabel control={<Checkbox />} name="hiring" label="Hiring?" onChange={(e) => handleChecks(e.target.name)} />
 
-            {/* for bullets */}
-            {/* <FormGroup>
-                    {bulletList.map(bullet => {
-                        return <FormControlLabel control={<Checkbox />} label={bullet} />
-                    })}
+            </div>
 
-                </FormGroup> */}
 
+            <h4>Select all skills that would be most helpful in your company</h4>
             <FormGroup>
                 <Grid className="scroller-two" container overflow={"visible"}>
                     {skillList.map(skill => {
@@ -106,11 +124,16 @@ export const Form = () => {
                 </Grid>
             </FormGroup>
 
+
+
+
+            {/* submit button */}
             <Button
 
                 onClick={
                     () => {
                         console.log(newForm)
+                        submitForm(newForm)
                     }
                 }
 

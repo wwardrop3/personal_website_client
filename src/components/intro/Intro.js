@@ -28,7 +28,7 @@ export const Intro = () => {
                         <h6>Python | Django | JavaScript | React</h6>
                     </Grid>
                     <Grid item>
-                        <h5>Mission Statement</h5>
+                        <h5>My Mission Statement</h5>
                         <p>I am a truth seeker who utilizes technology to better understand the world around me. I look to improve our understanding of reality by writing code to analyze and organize locational and other types of data.</p>
 
                     </Grid>

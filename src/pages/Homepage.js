@@ -55,7 +55,15 @@ export const Homepage = ({ scrollId, pages, pagesDict, hideFeedback, setHideFeed
 
                 </Grid>
 
+                <Grid item xs={12} xl={12} className="section-container">
+                    <Box className="scroller-two">
+                        <div id="projects">
+                            <Projects />
+                        </div>
 
+
+                    </Box>
+                </Grid>
 
                 <Grid item xs={12} xl={12} className="section-container">
                     <Box className="scroller-two">
@@ -68,15 +76,7 @@ export const Homepage = ({ scrollId, pages, pagesDict, hideFeedback, setHideFeed
                 </Grid>
 
 
-                <Grid item xs={12} xl={12} className="section-container">
-                    <Box className="scroller-two">
-                        <div id="projects">
-                            <Projects />
-                        </div>
 
-
-                    </Box>
-                </Grid>
 
 
 
