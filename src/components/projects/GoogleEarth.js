@@ -34,7 +34,7 @@ export const GoogleEarth = () => {
 
                             <Grid item xs={12}>
                                 <Typography>
-                                    I created the website you are currently reading.  During development, I learned Material UI on the front end and used Python and Django to manage feedback responses on the backend.
+                                    I created a Python tool that would parse through existing KML files of real estate development pipelines over time, spot changes, and then update changes to a Google Sheet.  The changes would be combined with our own pipeline and auto update a KML link for display in Google Earth.
                                 </Typography>
                             </Grid>
 

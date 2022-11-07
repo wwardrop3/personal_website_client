@@ -34,7 +34,7 @@ export const Hitch = () => {
 
                             <Grid item xs={12}>
                                 <Typography>
-                                    I created the website you are currently reading.  During development, I learned Material UI on the front end and used Python and Django to manage feedback responses on the backend.
+                                    Hitch reinvents the lost pastime of hitchhiking for the modern world. The app allows drivers with extra room in their car, to connect with passengers seeking inexpensive transportation.
                                 </Typography>
                             </Grid>
 
