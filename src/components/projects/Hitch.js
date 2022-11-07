@@ -55,6 +55,7 @@ export const Hitch = () => {
                                     <Button
                                         onClick={() => openInNewTab("https://hitch-capstone-client.herokuapp.com/home")}
                                     >Website</Button>
+                                    <p>Note: you will need to allow location access in your browser.  The site finds rides near your current location.  If there are none, search Nashville for examples </p>
 
                                 </Grid>
 
