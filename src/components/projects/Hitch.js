@@ -34,7 +34,7 @@ export const Hitch = () => {
 
                             <Grid item xs={12}>
                                 <Typography>
-                                    Hitch reinvents the lost pastime of hitchhiking for the modern world. The app allows drivers with extra room in their car, to connect with passengers seeking inexpensive transportation.
+                                    Hitch reinvents the lost pastime of hitchhiking for the modern world. The app allows drivers with extra room in their car, to connect with passengers seeking inexpensive, convenient, and more energy efficient transportation.
                                 </Typography>
                             </Grid>
 
