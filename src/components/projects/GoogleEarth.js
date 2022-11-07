@@ -48,17 +48,7 @@ export const GoogleEarth = () => {
                                 </Typography>
                             </Grid>
 
-                            <Grid container xs={12} justifyContent={"space-around"}>
 
-
-
-                                <Grid item xs={6} md={4}>
-                                    <Button
-                                        onClick={() => openInNewTab("https://github.com/wwardrop3/hitch_be_capstone_client")}
-                                    >Download KML Example</Button>
-                                </Grid>
-
-                            </Grid>
                         </Grid>
 
 

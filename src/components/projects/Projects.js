@@ -78,7 +78,7 @@ export const Projects = () => {
 
 
 
-            <Grid container xs={12} xl={8} height={"80vh"}>
+            <Grid container xs={12} xl={12} height={"80vh"}>
 
 
 
