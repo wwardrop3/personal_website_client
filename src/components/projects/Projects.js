@@ -5,6 +5,7 @@ import { GoogleEarth } from "./GoogleEarth"
 import { Hitch } from "./Hitch"
 import { PersonalWebsite } from "./PersonalWebsite"
 import { Reaction } from "./Reaction"
+import { Spotter } from "./Spotter"
 
 export const Projects = () => {
 
@@ -44,6 +45,9 @@ export const Projects = () => {
 
                 onClick={toggleDrawer("", "bottom", false)} />
 
+            <div hidden={projectName != "Spotter" ? "none" : ""}>
+                <Spotter />
+            </div>
 
             <div hidden={projectName != "Personal Website" ? "none" : ""}>
                 <PersonalWebsite />
@@ -104,6 +108,34 @@ export const Projects = () => {
 
                     </Drawer>
 
+
+                    {/* Spotter */}
+                    <Grid item xs={12} padding={1} >
+
+                        <Card style={{ height: "100%" }}>
+
+                            <Button
+
+                                onClick={toggleDrawer("Spotter", "bottom", true)}
+
+
+                                style={{ height: "100%", width: "100%", backgroundImage: "url(https://academics.otc.edu/media/uploads/sites/49/2022/06/page-under-construction-icon.jpg)" }}>
+
+                                <div className="project-title">
+                                    <Typography fontSize={12} >
+                                        <h1>Spotter</h1>
+                                    </Typography>
+
+                                </div>
+
+
+                            </Button>
+
+
+
+                        </Card>
+
+                    </Grid>
 
 
 
