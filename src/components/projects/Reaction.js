@@ -53,15 +53,15 @@ export const Reaction = () => {
 
                                 <Grid item xs={6} md={4}>
                                     <Button
-                                        onClick={() => openInNewTab("https://github.com/wwardrop3/hitch_be_capstone_client")}
-                                    >Download KML Example</Button>
+                                        onClick={() => openInNewTab("https://reaction-client.herokuapp.com/login")}
+                                    >Website</Button>
 
                                 </Grid>
 
                                 <Grid item xs={6} md={4}>
                                     <Button
-                                        onClick={() => openInNewTab("https://github.com/wwardrop3/hitch_be_capstone_client")}
-                                    >Download KML Example</Button>
+                                        onClick={() => openInNewTab("https://github.com/wwardrop3/capstone-reaction")}
+                                    >GitHub</Button>
 
                                 </Grid>
 
