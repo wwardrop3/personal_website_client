@@ -141,10 +141,11 @@ export const Navbar = ({ scrollId, setScrollId, pagesDict, pages, hideFeedback, 
                         ))}
                     </Box>
 
-                    <Box sx={{ flexGrow: 0 }}>
+                    {/* FUTURE FEEDBACK FEATURE */}
+                    {/* <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="Open settings">
                             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, color: "white", fontSize: "12pt" }}>
-                                {/* <EmailIcon /> */}
+
                                 Feedback
                             </IconButton>
                         </Tooltip>
@@ -165,9 +166,9 @@ export const Navbar = ({ scrollId, setScrollId, pagesDict, pages, hideFeedback, 
                             onClose={handleCloseUserMenu}
                         >
 
-                            {/* FUTURE FEEDBACK FEATURE */}
 
-                            {/* <MenuItem key={'feedback'} onClick={() => {
+
+                            <MenuItem key={'feedback'} onClick={() => {
                                 {
                                     handleCloseUserMenu()
                                     setHideFeedback(false)
@@ -176,10 +177,10 @@ export const Navbar = ({ scrollId, setScrollId, pagesDict, pages, hideFeedback, 
                             }}
                             >
                                 <Typography textAlign="center">{'Feedback'}</Typography>
-                            </MenuItem> */}
+                            </MenuItem>
 
                         </Menu>
-                    </Box>
+                    </Box> */}
                 </Toolbar>
             </Container>
         </AppBar>
