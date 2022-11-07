@@ -165,9 +165,9 @@ export const Navbar = ({ scrollId, setScrollId, pagesDict, pages, hideFeedback, 
                             onClose={handleCloseUserMenu}
                         >
 
+                            {/* FUTURE FEEDBACK FEATURE */}
 
-
-                            <MenuItem key={'feedback'} onClick={() => {
+                            {/* <MenuItem key={'feedback'} onClick={() => {
                                 {
                                     handleCloseUserMenu()
                                     setHideFeedback(false)
@@ -176,7 +176,7 @@ export const Navbar = ({ scrollId, setScrollId, pagesDict, pages, hideFeedback, 
                             }}
                             >
                                 <Typography textAlign="center">{'Feedback'}</Typography>
-                            </MenuItem>
+                            </MenuItem> */}
 
                         </Menu>
                     </Box>

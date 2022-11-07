@@ -53,15 +53,22 @@ export const Hitch = () => {
 
                                 <Grid item xs={6} md={4}>
                                     <Button
-                                        onClick={() => openInNewTab("https://github.com/wwardrop3/hitch_be_capstone_client")}
-                                    >Download KML Example</Button>
+                                        onClick={() => openInNewTab("https://hitch-capstone-client.herokuapp.com/home")}
+                                    >Website</Button>
 
                                 </Grid>
 
                                 <Grid item xs={6} md={4}>
                                     <Button
                                         onClick={() => openInNewTab("https://github.com/wwardrop3/hitch_be_capstone_client")}
-                                    >Download KML Example</Button>
+                                    >GitHub - Client</Button>
+
+                                </Grid>
+
+                                <Grid item xs={6} md={4}>
+                                    <Button
+                                        onClick={() => openInNewTab("https://github.com/wwardrop3/hitch_be_capstone_server")}
+                                    >GitHub - Server</Button>
 
                                 </Grid>
 

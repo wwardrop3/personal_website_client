@@ -2,7 +2,7 @@ import { Button, Grid, Paper, Typography } from "@mui/material"
 import { Link } from "react-router-dom"
 
 
-export const PersonalWebsite = () => {
+export const Spotter = () => {
 
 
     const openInNewTab = url => {
@@ -22,27 +22,28 @@ export const PersonalWebsite = () => {
 
 
                         <Grid item xs={12} md={6}>
-                            <img src="https://sat02pap002files.storage.live.com/y4mcFD950Mtd0DPsmaI7QdGGBBxBTNp6eipJNQkMh2XywiA1TGYN48h1Vgr7xH5BeFYZGqtm5w5CsDXdB9eS-fDvXn8tQMHMVR8rLJYMyFMYmNKWBWSdkicgSg6rff15OwMVx4GsWxLJlgRxw2PxbJBnboYUzMNDYHHg6MvyT0k0lkjzHCfvwk--TvNrgUVwJ_o?width=936&height=530&cropmode=none" />
+                            <img src="https://academics.otc.edu/media/uploads/sites/49/2022/06/page-under-construction-icon.jpg" />
                         </Grid>
 
                         <Grid container xs={12} md={6} justifyContent={"center"}>
                             <Grid item xs={12} alignContent={"center"}>
-                                <h3>Personal Website</h3>
+                                <h3>Spotter (under construction)</h3>
                             </Grid>
 
 
 
                             <Grid item xs={12}>
                                 <Typography>
-                                    I created the website you are currently reading.  During development, I learned Material UI on the front end and used Python and Django to manage feedback responses on the backend.
+                                    I am currently working on a workout application that allows users to create and store workout plans with exercises specifically tailored to the equipment available. Users can save individual workout session stats and share workout plans with other users.
                                 </Typography>
                             </Grid>
 
                             <Grid item xs={12}>
                                 <Typography>
                                     <ul>
-                                        <li>Utilized Material UI to develop front end to be accessible on mobile</li>
-                                        <li>Used Python on the backend to keep track of feedback form submissions</li>
+                                        <li>Filter exercises by the equipment the user has available</li>
+                                        <li>Search other user workout plans if the other user has made their plan public</li>
+                                        <li>Store session and exercise stats to view later to see progress over time</li>
                                     </ul>
                                 </Typography>
                             </Grid>
@@ -53,12 +54,15 @@ export const PersonalWebsite = () => {
 
                                 <Grid item xs={6} md={4}>
                                     <Button
-                                        onClick={() => openInNewTab("https://github.com/wwardrop3/personal_website_client")}
-                                    >GitHub</Button>
-
+                                        onClick={() => openInNewTab("https://github.com/wwardrop3/spotter_client")}
+                                    >GitHub - Client</Button>
                                 </Grid>
 
-
+                                <Grid item xs={6} md={4}>
+                                    <Button
+                                        onClick={() => openInNewTab("https://github.com/wwardrop3/spotter_server")}
+                                    >GitHub - Server</Button>
+                                </Grid>
 
                             </Grid>
                         </Grid>

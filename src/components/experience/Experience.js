@@ -80,7 +80,7 @@ export const Experience = () => {
                                 aria-controls="panel2bh-content"
                                 id="panel2bh-header"
                                 style={{
-                                    "backgroundImage": "url(https://www.responsibilityreports.com/HostedData/CompanyHeader/NYSE_CBRE_6fb1dec38b254747a466bf2db0c8b61d.jpg)"
+                                    backgroundColor: "green"
                                 }}
                             >
                                 <Typography sx={{ width: '100%', flexShrink: 1, height: "10vh", position: "sticky" }}>
