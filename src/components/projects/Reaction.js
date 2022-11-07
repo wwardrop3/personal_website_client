@@ -54,7 +54,7 @@ export const Reaction = () => {
                                 <Grid item xs={6} md={4}>
                                     <Button
                                         onClick={() => openInNewTab("https://reaction-client.herokuapp.com/login")}
-                                    >Website</Button>
+                                    >Website (use "wilbur@wilbur.com" as username)</Button>
 
                                 </Grid>
 

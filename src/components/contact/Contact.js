@@ -33,7 +33,10 @@ export const Contact = () => {
                 <Grid item>
 
                     <h2>Will Wardrop | 312.505.4104 | wwardrop@gmail.com</h2>
-                    <a href="https://www.linkedin.com/in/williamswardrop/">LinkedIn</a>
+                    <Button
+                        onClick={() => openInNewTab("https://www.linkedin.com/in/williamswardrop/")}
+                    >LinkedIn</Button>
+
                 </Grid>
             </Grid>
 
